@@ -1,0 +1,1322 @@
+{
+  "/home/kai/Downloads/superMallFinal/backend/mvnw": {
+    "mtime": 1776237853.421711,
+    "ast_hash": "ab50dd89da7da2346b28003352eeeeeb",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/verify-code.sh": {
+    "mtime": 1778055230.5211463,
+    "ast_hash": "c855716f0955fe0e826454857be3629c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/ide-proof.sh": {
+    "mtime": 1778057546.3293471,
+    "ast_hash": "a7f1a2446b8850bf5b08fb62968dcba6",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/qa-tests/AdminControlTestSuite.py": {
+    "mtime": 1776398231.0110314,
+    "ast_hash": "0a82f4432d0331556c16ca3e7648bafb",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/resources/db/migration/V11__add_performance_indexes.sql": {
+    "mtime": 1778042253.1928287,
+    "ast_hash": "d26a182b014faaf93ce726f24689d961",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/resources/db/migration/V10__coupon_constraints.sql": {
+    "mtime": 1776399244.117968,
+    "ast_hash": "70aa3c0b4cc842b69873912ef81b1278",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/resources/db/migration/V2__future_schema_changes.sql": {
+    "mtime": 1776403170.1475139,
+    "ast_hash": "7bf29b921330ce64e0c5ea406c51afba",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/resources/db/migration/V1__add_idempotency_and_payment_tables.sql": {
+    "mtime": 1776403169.4043896,
+    "ast_hash": "00293c97c03f63177e24ca05051a8957",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/SuperMalleApplication.java": {
+    "mtime": 1776403167.562812,
+    "ast_hash": "4c390c675d4f250aff13e94c08dbf8d8",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/metrics/BusinessMetrics.java": {
+    "mtime": 1778042637.8485131,
+    "ast_hash": "0fb96c200402914fe08792a296808481",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/LoginRateLimitService.java": {
+    "mtime": 1776250860.6426923,
+    "ast_hash": "bb82448be8a5063349549cf3a73e4c11",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/CustomUserDetailsService.java": {
+    "mtime": 1776240893.331318,
+    "ast_hash": "fa357e26260a688195a28e52a96a6e06",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/CustomUserDetails.java": {
+    "mtime": 1778038002.6518624,
+    "ast_hash": "984cb4e22206327b2e191b4c62ed4912",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/JwtUtil.java": {
+    "mtime": 1776250167.2349503,
+    "ast_hash": "e0b1269058e8cf84b394e27f25d9467c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/RateLimitConfig.java": {
+    "mtime": 1778048684.871008,
+    "ast_hash": "9380ea2dc371bb513f98aeaac888fa03",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/AESUtil.java": {
+    "mtime": 1778041683.1819131,
+    "ast_hash": "d6d52c9142919fd5b7f2a159a370e7b3",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/RateLimitInterceptor.java": {
+    "mtime": 1778047643.929336,
+    "ast_hash": "db8217859d0179a681dabb7fb7fc04cc",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/JwtAuthenticationFilter.java": {
+    "mtime": 1776240893.331422,
+    "ast_hash": "158fb90af3524fcbe48cd662a3443575",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/security/OAuth2LoginSuccessHandler.java": {
+    "mtime": 1776333590.2874734,
+    "ast_hash": "7790f3d88c049fe1c305770751209c12",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/aspect/IdempotencyInterceptor.java": {
+    "mtime": 1776407813.675482,
+    "ast_hash": "b298091cced37d195dc6a038cc92f27e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/aspect/StructuredLoggingAspect.java": {
+    "mtime": 1778043282.8593583,
+    "ast_hash": "1181a507c8ed5c2e0443c6ac513e74e1",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/PaymentException.java": {
+    "mtime": 1778042568.1162684,
+    "ast_hash": "7a57f80dd6e282b7e00a90494a5981a1",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/GlobalExceptionHandler.java": {
+    "mtime": 1776294213.3553295,
+    "ast_hash": "687bf004d22c4a24d0b75f1678418640",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/BadRequestException.java": {
+    "mtime": 1776240893.3290467,
+    "ast_hash": "ce959795438944aca209ee788a275922",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/ResourceNotFoundException.java": {
+    "mtime": 1776240893.3289077,
+    "ast_hash": "cad552ac289c039f885478277d56ba6e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/UnauthorizedException.java": {
+    "mtime": 1776240893.3291516,
+    "ast_hash": "524f1668a3a0e61f590a10ef8d7a336d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/ServiceUnavailableException.java": {
+    "mtime": 1778042554.1686006,
+    "ast_hash": "0be069eb40f4ccf388750b76a5a9db23",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/RateLimitExceededException.java": {
+    "mtime": 1778041909.127688,
+    "ast_hash": "3b545a36bb0702c2959403af82257c5b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/ConflictException.java": {
+    "mtime": 1776284708.39198,
+    "ast_hash": "f969545a87dd52a7b932741eba612096",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/exception/InventoryConflictException.java": {
+    "mtime": 1776409188.9154809,
+    "ast_hash": "acd1cee737ca78d0d8d4a47c7eef552e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/converter/CreditCardEncryptor.java": {
+    "mtime": 1778041716.6933122,
+    "ast_hash": "d1ea0e4acc7c7e885d659aefa4fbc76f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/converter/PhoneNumberEncryptor.java": {
+    "mtime": 1778041787.2085834,
+    "ast_hash": "b5bc62a35ddb3ee2cf660a8fa9f598ac",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/converter/AddressEncryptor.java": {
+    "mtime": 1778041748.2205818,
+    "ast_hash": "78049b73c2c2d30d26136ce5d96bc787",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Coupon.java": {
+    "mtime": 1778032990.631539,
+    "ast_hash": "08443a9630432b3a0091c0b9cbdd1bf7",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/OrderItem.java": {
+    "mtime": 1778545624.7167504,
+    "ast_hash": "e9e46c5b3683700d9bed54ab3caf68d1",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/FeatureFlag.java": {
+    "mtime": 1778044021.7324116,
+    "ast_hash": "89c8e10a0582908c00c7728f51ac6495",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Inventory.java": {
+    "mtime": 1778034863.6329982,
+    "ast_hash": "0786b7a2395ef316a3c721a877c11f58",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/PasswordResetToken.java": {
+    "mtime": 1776330882.3576005,
+    "ast_hash": "80e5e0b0b096f4d0a2b2f3362a8d316e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/IdempotencyKey.java": {
+    "mtime": 1776402593.2712698,
+    "ast_hash": "fba28bd374c34ec92d87b4da7103b4f0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Payment.java": {
+    "mtime": 1778545624.719071,
+    "ast_hash": "2d7abff3e0f0790e881270dc1b1f6381",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Refund.java": {
+    "mtime": 1776256270.0789187,
+    "ast_hash": "e1a5e28974f858d5211f1b7e3b7f614b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/OrderModification.java": {
+    "mtime": 1778035029.0690608,
+    "ast_hash": "70a396a11e401d7f26a0ed5e7b18fa28",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/OrderStatusLog.java": {
+    "mtime": 1776256156.646914,
+    "ast_hash": "52edfa9e97e43a4fd500a1f0d3adb383",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/UserLoyalty.java": {
+    "mtime": 1778034941.3472521,
+    "ast_hash": "086f24f593149dd6d376496fa2b62f3a",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/AuditLog.java": {
+    "mtime": 1778043843.9366696,
+    "ast_hash": "b49712c35790f977283929a63f49acc5",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Order.java": {
+    "mtime": 1778545624.7042296,
+    "ast_hash": "9363c95f3def364c72a98d8654226890",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Cart.java": {
+    "mtime": 1776274721.3955617,
+    "ast_hash": "1ddf751c170c13867a8b85a37b2cf19f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/LoyaltyProgram.java": {
+    "mtime": 1778034904.2963526,
+    "ast_hash": "4c8162e697fd5ae8f8180ec4119b3711",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/LoyaltyTransaction.java": {
+    "mtime": 1778034985.591619,
+    "ast_hash": "40a65f690c1a4423cf3c3612646f984f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/CartItem.java": {
+    "mtime": 1776240893.3275623,
+    "ast_hash": "1a3844cd050a0dcbf3f95956cbdc6d0d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/MenuItem.java": {
+    "mtime": 1778545624.6895363,
+    "ast_hash": "0b095da895f8a9ae583ef1a83f811c40",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/User.java": {
+    "mtime": 1776288946.15925,
+    "ast_hash": "47b38e2046922ef31a2bcb9f6b21ba86",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Category.java": {
+    "mtime": 1776275289.2618403,
+    "ast_hash": "01dd0f1eab39710b6c1da5864f75e322",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Review.java": {
+    "mtime": 1776240893.328666,
+    "ast_hash": "c404117ebc39e7231797ea4cd1a99080",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/Settings.java": {
+    "mtime": 1776254087.5970085,
+    "ast_hash": "e7c2427ff825e8a8b570628ecb421702",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/enums/OrderStatus.java": {
+    "mtime": 1776240893.3269787,
+    "ast_hash": "3961aeeef82b2dc5a922799a5c50ef34",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/enums/DietaryTag.java": {
+    "mtime": 1776415057.910531,
+    "ast_hash": "bdc4089ff8d12a10e615e4dba6b03a66",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/enums/Allergen.java": {
+    "mtime": 1776415062.2159905,
+    "ast_hash": "03310aeac3d468f99f6652ec754f8126",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/enums/IdempotencyStatus.java": {
+    "mtime": 1776402592.7795444,
+    "ast_hash": "b6ba7b5ce53a6f8c4389fd2784034f5e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/enums/PaymentStatus.java": {
+    "mtime": 1776240893.3274374,
+    "ast_hash": "c118e839977b858c8ce7e4f406091b61",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/enums/UserRole.java": {
+    "mtime": 1776240893.3271194,
+    "ast_hash": "78ab4ba40232fae138a2df52cf5ea870",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/enums/DiscountType.java": {
+    "mtime": 1776240893.3273327,
+    "ast_hash": "57a14ea3178082282177b5200cdd0b33",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/entity/enums/OrderType.java": {
+    "mtime": 1776240893.3272274,
+    "ast_hash": "d6b7d3afc1556f703342078830633bfb",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/FeatureFlagRepository.java": {
+    "mtime": 1778044042.3357897,
+    "ast_hash": "68bb6c84c93ce9fd0e831f50418d64f0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/UserLoyaltyRepository.java": {
+    "mtime": 1778035084.9176557,
+    "ast_hash": "dccf24080709e682b0e450453a5889dc",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/OrderItemRepository.java": {
+    "mtime": 1776358882.640126,
+    "ast_hash": "c14f19abbebb05d8141aa1ab29f19962",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/CartItemRepository.java": {
+    "mtime": 1776240893.3303049,
+    "ast_hash": "22e324b9c89205b5035e6932ee7933d5",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/UserRepository.java": {
+    "mtime": 1776356663.3740098,
+    "ast_hash": "512bdd31c0d8f5361563fbd7e65c957b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/OrderRepository.java": {
+    "mtime": 1776356749.3467002,
+    "ast_hash": "a778b05c55eb562d3e6d0c277c7bd976",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/MenuItemRepository.java": {
+    "mtime": 1776240893.329761,
+    "ast_hash": "c1bd45e2a10bc77f7754c5a4d505394f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/LoyaltyTransactionRepository.java": {
+    "mtime": 1778035100.6486995,
+    "ast_hash": "1b4f4a91dc3d485f3906dea2c221ec21",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/SettingsRepository.java": {
+    "mtime": 1776240893.3307304,
+    "ast_hash": "0b96dd6e2f14d0de3b35641f3e94a5fc",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/CartRepository.java": {
+    "mtime": 1776240893.3298814,
+    "ast_hash": "a990cae11689d6ab41b5494d51cc9093",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/InventoryRepository.java": {
+    "mtime": 1778035050.741492,
+    "ast_hash": "8091fdf6a2e10bd57fb1d77ddae34d20",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/IdempotencyKeyRepository.java": {
+    "mtime": 1776402700.6921597,
+    "ast_hash": "c42cad9612951a3ac9d027c6cd40abd1",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/LoyaltyProgramRepository.java": {
+    "mtime": 1778035062.568302,
+    "ast_hash": "3b843a5b1453a121be58853776a6d179",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/ReviewRepository.java": {
+    "mtime": 1776292148.1162913,
+    "ast_hash": "93339401fff74bae2cb3fd3f81e08e23",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/OrderStatusLogRepository.java": {
+    "mtime": 1776240893.3296568,
+    "ast_hash": "3f08e8e09a4151bc7bedaef2d173eb38",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/RefundRepository.java": {
+    "mtime": 1776240893.330411,
+    "ast_hash": "f187cd1dd537fc6933a66228c8214a7e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/OrderModificationRepository.java": {
+    "mtime": 1778035120.7429795,
+    "ast_hash": "5a723df9756da0fab98a1bb50dbb7fff",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/PasswordResetTokenRepository.java": {
+    "mtime": 1776328443.4776645,
+    "ast_hash": "703094ccbe835997ff660841a7cfc110",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/CouponRepository.java": {
+    "mtime": 1776408268.6909378,
+    "ast_hash": "d8fdd28a90213911bb9ebfd1728a580f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/CategoryRepository.java": {
+    "mtime": 1776240893.3299875,
+    "ast_hash": "04cce06a250094a739257b3dba6b4eee",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/AuditLogRepository.java": {
+    "mtime": 1778043892.5667462,
+    "ast_hash": "3ca325dd06dbf88563aafba2fc96ba0c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/repository/PaymentRepository.java": {
+    "mtime": 1776240893.3308358,
+    "ast_hash": "b2e1dd1174dc9e2e6c9680af112fece2",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/annotation/Idempotent.java": {
+    "mtime": 1776402039.954985,
+    "ast_hash": "41aefa67cd5828d73f70176aa090facc",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/annotation/AuditLog.java": {
+    "mtime": 1778043939.1479704,
+    "ast_hash": "df8f8a6a2429acf04554d85fcc66aae3",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/validation/ValidPhoneNumber.java": {
+    "mtime": 1778041958.9719377,
+    "ast_hash": "a288e62723fc9ff42bead9277c3902f7",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/validation/EmailValidator.java": {
+    "mtime": 1778041949.8048427,
+    "ast_hash": "45aa33decb74abdffcc81277709567da",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/validation/PhoneNumberValidator.java": {
+    "mtime": 1778041969.6402175,
+    "ast_hash": "9eff397dcecca83aef1941d0188c4bda",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/validation/CreditCardValidator.java": {
+    "mtime": 1778042027.72339,
+    "ast_hash": "7f82548ca48c58aeb1d26b0a8a050f7a",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/validation/ValidCreditCard.java": {
+    "mtime": 1778041988.4499989,
+    "ast_hash": "e039f9b17a2d2511a122aa9fc927c082",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/validation/ValidEmail.java": {
+    "mtime": 1778041931.2566617,
+    "ast_hash": "27cf6df300f801f351f0891d1d67817e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/health/RabbitMQHealthIndicator.java": {
+    "mtime": 1778062594.7409074,
+    "ast_hash": "0e33541ac7e717a614334bb4414634e4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/health/RedisHealthIndicator.java": {
+    "mtime": 1778050218.2169363,
+    "ast_hash": "811ecbe4dafaa8853f85489ff81877b2",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/health/LivenessHealthIndicator.java": {
+    "mtime": 1778063180.608356,
+    "ast_hash": "55a5c5b18e2f9c0a8cdf0f408f6eb2ee",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/health/StripeHealthIndicator.java": {
+    "mtime": 1778050192.9969354,
+    "ast_hash": "38b82bab829508a7110df6a846375e97",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/health/ReadinessHealthIndicator.java": {
+    "mtime": 1778063242.3095076,
+    "ast_hash": "32fb7dc5d2af7098d1506050271452b5",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/health/DatabaseHealthIndicator.java": {
+    "mtime": 1778050274.3594508,
+    "ast_hash": "32156d014b7bc3b3b30ad2c37ceaf0bd",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/CouponService.java": {
+    "mtime": 1776407925.7189815,
+    "ast_hash": "b171515c95a2186e319bd737cfd1753d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/InventoryService.java": {
+    "mtime": 1778035592.412567,
+    "ast_hash": "2ab21216a80753ce3d713d10a1b8045c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/AdminReviewService.java": {
+    "mtime": 1776356958.987392,
+    "ast_hash": "a57b4c5f0cac67cad9f9d039167d116c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/AsyncEmailService.java": {
+    "mtime": 1778042376.9698584,
+    "ast_hash": "8f20b15a9443651deb54b8af90087c33",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/AuthService.java": {
+    "mtime": 1776329100.3110042,
+    "ast_hash": "2b33c24e66ed29d5ea28f445580b5a26",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/OrderService.java": {
+    "mtime": 1776409307.8463004,
+    "ast_hash": "7d9e9eca23c741d63fe839f6faf5c778",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/ResilientPaymentService.java": {
+    "mtime": 1778051341.2729833,
+    "ast_hash": "fbeb75bd290e204d51087b4384106acc",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/AsyncNotificationService.java": {
+    "mtime": 1778042450.2730765,
+    "ast_hash": "11a86f790703df3f7316b0de226b7504",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/SettingsService.java": {
+    "mtime": 1776286127.7035925,
+    "ast_hash": "129a8b489aaaa3b9e7dc42751a177066",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/FeatureFlagService.java": {
+    "mtime": 1778044072.2078588,
+    "ast_hash": "78c2827ee65662b1b38ddc0a5a86b847",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/NotificationService.java": {
+    "mtime": 1778036280.521303,
+    "ast_hash": "80df559c280b8c8f49d49b418171c038",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/AuditService.java": {
+    "mtime": 1778048470.725936,
+    "ast_hash": "2660765223f22d84b74a79e531314a9d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/MenuItemService.java": {
+    "mtime": 1778040913.0307667,
+    "ast_hash": "fb0fd4e6247c4194c6921a0e39d3fb3a",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/CategoryService.java": {
+    "mtime": 1776292288.6981845,
+    "ast_hash": "dcb9f5852a429020e42c7f21008a4887",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/CartService.java": {
+    "mtime": 1776291569.515454,
+    "ast_hash": "4ee95b9e323dded747d25e0ed0f7f555",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/EmailService.java": {
+    "mtime": 1778038103.452056,
+    "ast_hash": "985ba03c63c1e58995a24f72b2e35611",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/DashboardService.java": {
+    "mtime": 1776359125.9147227,
+    "ast_hash": "049ed3fde99698641729b35307691f04",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/LoyaltyService.java": {
+    "mtime": 1778035935.8646219,
+    "ast_hash": "18bcc54739160a2df7ebc468a0cb58fb",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/AdminUserService.java": {
+    "mtime": 1776356519.2721434,
+    "ast_hash": "3873f7ccf66841d3587b1d0a310362db",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/OrderModificationService.java": {
+    "mtime": 1778035748.2643306,
+    "ast_hash": "4c728912862454a2dab8f5636c846e3c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/service/PaymentService.java": {
+    "mtime": 1776407815.6372223,
+    "ast_hash": "a44b4e2760e4010b5624016067fc1717",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/OrderController.java": {
+    "mtime": 1776277718.2221196,
+    "ast_hash": "d3bb7b21f1e96686d6d2ac81e2b798ed",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/AuthController.java": {
+    "mtime": 1776329181.0860333,
+    "ast_hash": "5d93d45655644adae8dcd8d792886594",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/InventoryController.java": {
+    "mtime": 1778035828.9511902,
+    "ast_hash": "483cae644444ae6233c34803139d109f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/StripeWebhookController.java": {
+    "mtime": 1776408120.4649785,
+    "ast_hash": "f8960d2024cfbeb065c0ce1206349e4c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/MenuController.java": {
+    "mtime": 1776277718.2223818,
+    "ast_hash": "2c8671ac1fde45f716dc2240e3cde217",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/OrderTrackingController.java": {
+    "mtime": 1776347812.4646318,
+    "ast_hash": "9a02507de8debb34875e1b10b32e77d0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/LoyaltyController.java": {
+    "mtime": 1778035876.672336,
+    "ast_hash": "e2d38b0c7b2f7ee8e9bfa46859d81e65",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/CategoryController.java": {
+    "mtime": 1776277628.37978,
+    "ast_hash": "db90e5cb4df5749d02bd45e1ba37d2f1",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/CartController.java": {
+    "mtime": 1776277718.222598,
+    "ast_hash": "2c785253e690cb17e8de5cf9b8de0e45",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/PaymentController.java": {
+    "mtime": 1776405611.6362417,
+    "ast_hash": "b71aa1e0ecab352f3a04a594be2cf928",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/OrderModificationController.java": {
+    "mtime": 1778035988.4293702,
+    "ast_hash": "09435cf8ab042d057cc56458107f1686",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminCouponController.java": {
+    "mtime": 1776408270.4081411,
+    "ast_hash": "68895d95221fb933da4a0938a6ceab48",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminUserController.java": {
+    "mtime": 1776356847.706449,
+    "ast_hash": "7a91f82d6e521c17a8f61652767322e9",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminMenuController.java": {
+    "mtime": 1776277718.22317,
+    "ast_hash": "3af27c43dafe3abd39084c92eaa6b375",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminCategoryController.java": {
+    "mtime": 1776277718.2233317,
+    "ast_hash": "e6fc933a7010659058f4e188efcb5bda",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminSettingsController.java": {
+    "mtime": 1776277628.3786135,
+    "ast_hash": "91d43cf0120c6cb02bc81f7e3ae60a21",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminNotificationController.java": {
+    "mtime": 1776293870.713907,
+    "ast_hash": "3a841715c000605e1487725c1f314afc",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminPaymentController.java": {
+    "mtime": 1776293691.664356,
+    "ast_hash": "e44880f6246474afda95549262de1517",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminOrderController.java": {
+    "mtime": 1776357308.4994748,
+    "ast_hash": "e1957bf962c98b6eb64c997bfe2dfc3b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminReviewController.java": {
+    "mtime": 1776357088.27949,
+    "ast_hash": "12126db94fb13699c079947ef6484db9",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/controller/admin/AdminDashboardController.java": {
+    "mtime": 1776359334.1490586,
+    "ast_hash": "943648996ee632969bb6aea544576f68",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/filter/CorrelationIdFilter.java": {
+    "mtime": 1778043262.1774836,
+    "ast_hash": "d4b44f23a90c29548587fe1fea180366",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/task/IdempotencyCleanupTask.java": {
+    "mtime": 1776403163.5671258,
+    "ast_hash": "aee26e17056e78ad1b084afc47967388",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/EncryptionConfig.java": {
+    "mtime": 1778041825.2171159,
+    "ast_hash": "1a54d996e2d3fb40c05f50f144782997",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/OAuth2Config.java": {
+    "mtime": 1776343215.5342422,
+    "ast_hash": "f47de5acc4535391e33302ce8663a229",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/CacheConfig.java": {
+    "mtime": 1778047768.1712847,
+    "ast_hash": "7ed439ad7f25daad7b00c9e9b42e6265",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/SecurityConfig.java": {
+    "mtime": 1778038804.0125706,
+    "ast_hash": "3aaffba5d7f15d91f3e2073006edb19f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/RabbitMQConfig.java": {
+    "mtime": 1778042325.652606,
+    "ast_hash": "0c8ca5b221db88b9aec09c07002b69e5",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/OpenApiConfig.java": {
+    "mtime": 1778048065.98064,
+    "ast_hash": "d0f8499adde2428393ae4c8422d92cf1",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/DataInitializer.java": {
+    "mtime": 1778033335.1977074,
+    "ast_hash": "7903fcaf295e39d08ada6f920505800d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/ResilienceConfig.java": {
+    "mtime": 1778048518.2929914,
+    "ast_hash": "13448c95ea99d404820c40b89c21aa66",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/AdminAuditAspect.java": {
+    "mtime": 1778048164.2208505,
+    "ast_hash": "8ed6b78ee8fbeb8c02efb2c8f211c56e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/DatabaseConfig.java": {
+    "mtime": 1778042278.560604,
+    "ast_hash": "852b8c13e69ca518ac51df7e186cde6d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/SecretValidationConfig.java": {
+    "mtime": 1776253051.966784,
+    "ast_hash": "cf0f189e430fdffbed72a7ef3a5cac49",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/WebSocketConfig.java": {
+    "mtime": 1776347196.051636,
+    "ast_hash": "fe81893a204153f9ef13eda46fa99901",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/EnhancedDataInitializer.java": {
+    "mtime": 1778037841.023173,
+    "ast_hash": "3f63aebb6c5edacacd400c0e7818aff0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/EmailConfig.java": {
+    "mtime": 1778036358.383312,
+    "ast_hash": "43850cee8fcadaa5c166e7ffad8b84d4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/StripeConfig.java": {
+    "mtime": 1776342912.053452,
+    "ast_hash": "894a56d27636530f78e0b32fa7b0dbc3",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/JacksonConfig.java": {
+    "mtime": 1776403162.0114217,
+    "ast_hash": "f0e058502497a697bdd619371d178b73",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/WebMvcConfig.java": {
+    "mtime": 1778041917.276713,
+    "ast_hash": "310c11dd1f71f377cef2359ec211169a",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/config/LoggingConfig.java": {
+    "mtime": 1778043226.3408616,
+    "ast_hash": "78e3e63823dba25bbfa200e7a590419d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/api/ApiResponse.java": {
+    "mtime": 1778044185.9046838,
+    "ast_hash": "c8db89636b5156e3b13a8eb30c9a6efd",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/payment/CreatePaymentIntentRequest.java": {
+    "mtime": 1776240893.3239474,
+    "ast_hash": "9b159c0441d9dacc09699b15ffb87f76",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/payment/PaymentIntentResponse.java": {
+    "mtime": 1776240893.3238409,
+    "ast_hash": "e25caf4603da6dea79409b5529e5331b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/payment/RefundRequest.java": {
+    "mtime": 1776252567.1660104,
+    "ast_hash": "e6d4346cc0ed38ddfdd76c5410e93fe6",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/payment/RefundResponse.java": {
+    "mtime": 1776240893.3240528,
+    "ast_hash": "2d644de4604f1d2b23338b8863405012",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/payment/PaymentResponse.java": {
+    "mtime": 1776240893.3235383,
+    "ast_hash": "03504e9e62080620defd481c7878834c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/AdminUserResponse.java": {
+    "mtime": 1776356308.5643494,
+    "ast_hash": "6dcfd0a9f546e2eefd19028a5ea0ead9",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/ReviewResponse.java": {
+    "mtime": 1776356439.1476285,
+    "ast_hash": "8f3a3346afbad180d8c478253bf4c74c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/AdminResetPasswordRequest.java": {
+    "mtime": 1776356367.575149,
+    "ast_hash": "e131279cd4dd20a9b21045418db37302",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/AdminUserRequest.java": {
+    "mtime": 1776356242.63241,
+    "ast_hash": "73527d722e3e84a2134674c8ec296909",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/TopItemResponse.java": {
+    "mtime": 1776240893.325882,
+    "ast_hash": "93c6746abcf2cf183f6c8cf5098e314e",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/SalesDataPoint.java": {
+    "mtime": 1776240893.3256717,
+    "ast_hash": "6481815796c4bc260a9b03b48f68cd89",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/SettingsResponse.java": {
+    "mtime": 1776240893.325986,
+    "ast_hash": "5df0202c0caf09c1cc94c191cdec13ae",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/CouponResponse.java": {
+    "mtime": 1776407811.7371583,
+    "ast_hash": "781467edc0eede09ad843b1a811b2dcf",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/SalesReportResponse.java": {
+    "mtime": 1776240893.3263085,
+    "ast_hash": "a553a08c47413004b49db1bb65ff8ac0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/CouponRequest.java": {
+    "mtime": 1776407810.0698173,
+    "ast_hash": "30d21c8a29f573b7844f28df368f1b33",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/SettingsRequest.java": {
+    "mtime": 1776252649.0309856,
+    "ast_hash": "0a21dd2c839ed1eba49b74335fbc06ee",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/admin/DashboardStatsResponse.java": {
+    "mtime": 1776240893.3255315,
+    "ast_hash": "0dcbb6ebfc6762d395b57515b8651ecd",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/menu/MenuItemResponse.java": {
+    "mtime": 1776240893.322211,
+    "ast_hash": "95755c2e712db130cf78382501cc2830",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/menu/CategoryResponse.java": {
+    "mtime": 1776240893.321784,
+    "ast_hash": "9263a84439b2d548ef5493e1465732f9",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/menu/PagedResponse.java": {
+    "mtime": 1776240893.322107,
+    "ast_hash": "ca1684b9c7e233699067560028d47b7f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/menu/CategoryRequest.java": {
+    "mtime": 1776240893.3220017,
+    "ast_hash": "7fedfa1df3aed9e9352cb409a1208acd",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/menu/MenuItemRequest.java": {
+    "mtime": 1776240893.321896,
+    "ast_hash": "ac48bcb4bf4c1a93528b04d909ac7cd2",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/OrderModificationResponse.java": {
+    "mtime": 1778035486.728022,
+    "ast_hash": "af65d396725bedcf0992c9b28bd457c0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/OrderStatusLogResponse.java": {
+    "mtime": 1776240893.3225791,
+    "ast_hash": "4712b318f2e621cb1172ee38ba5a3036",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/ReviewResponse.java": {
+    "mtime": 1776240893.3226976,
+    "ast_hash": "4d553e63f06fe0c658fddf0402a8f6dc",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/UpdateEtaRequest.java": {
+    "mtime": 1776358084.4217558,
+    "ast_hash": "361e678e097bfbff8d1675519d58f5ac",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/ApproveModificationRequest.java": {
+    "mtime": 1778035520.6407094,
+    "ast_hash": "9f4f4066f739515fe4a45410748975ac",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/ReviewRequest.java": {
+    "mtime": 1776240893.3233051,
+    "ast_hash": "21fdbbab15fb1990f135cf892cbb7bba",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/OrderResponse.java": {
+    "mtime": 1776289831.2344494,
+    "ast_hash": "4f773a13a2f8c90eb88f52bc4fafc059",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/RejectModificationRequest.java": {
+    "mtime": 1778035546.5920036,
+    "ast_hash": "bcef09d67670ce97b997cb4b6d65b982",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/OrderItemResponse.java": {
+    "mtime": 1776240893.3224404,
+    "ast_hash": "539cefa27f5c84d4126b962894349a69",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/PlaceOrderRequest.java": {
+    "mtime": 1776240893.32319,
+    "ast_hash": "a400833570eb66a570cacfd6264094b4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/OrderModificationRequest.java": {
+    "mtime": 1778035446.1962726,
+    "ast_hash": "57c29ca4a4afb12c5560e6fb6e18d4c4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/UpdateOrderStatusRequest.java": {
+    "mtime": 1776240893.323015,
+    "ast_hash": "4e0f4ff4abca897ca06321344f8303cb",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/order/AdminCancelOrderRequest.java": {
+    "mtime": 1776358016.869794,
+    "ast_hash": "6e4d3f0ff54475cdbccb4ef9796a2923",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/cart/CartItemResponse.java": {
+    "mtime": 1776240893.3253057,
+    "ast_hash": "7b777f97f59288d0e8306122c7b1588b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/cart/UpdateCartItemRequest.java": {
+    "mtime": 1776240893.324957,
+    "ast_hash": "eef8c682cc645be1cc83d48a3681eb17",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/cart/AddToCartRequest.java": {
+    "mtime": 1776240893.3252008,
+    "ast_hash": "1a3d8388cf924fb93b45b53c70f0f57d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/cart/CartResponse.java": {
+    "mtime": 1776240893.3250952,
+    "ast_hash": "40e405788c0192a78e7f6c2d7a190648",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/inventory/InventoryRequest.java": {
+    "mtime": 1778036828.2005363,
+    "ast_hash": "35fea3b21ec3cc083f368094d40612a9",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/inventory/RestockRequest.java": {
+    "mtime": 1778035188.2526731,
+    "ast_hash": "2a9bfac0eb044710fc7613b358f08bd4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/inventory/InventoryResponse.java": {
+    "mtime": 1778035155.7642562,
+    "ast_hash": "0fbcfc58841572116e8279a140480be0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/loyalty/LoyaltyProgramResponse.java": {
+    "mtime": 1778035263.1123104,
+    "ast_hash": "c4bcf48a7cb746538f0f3a4851301cb1",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/loyalty/LoyaltyTransactionResponse.java": {
+    "mtime": 1778035415.5092962,
+    "ast_hash": "48202a0da9af00844d0e6f28e359014f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/loyalty/UserLoyaltyResponse.java": {
+    "mtime": 1778035317.76353,
+    "ast_hash": "74aa0545b4fc81d4fca67241a6bfc0fd",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/loyalty/RedeemPointsRequest.java": {
+    "mtime": 1778035380.0241623,
+    "ast_hash": "8f6a8a25681b20af058ee0ea007cf522",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/loyalty/LoyaltyProgramRequest.java": {
+    "mtime": 1778035225.888601,
+    "ast_hash": "ff6bdd241f54c2bfc5e2de9b585d4a54",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/notification/NotificationMessage.java": {
+    "mtime": 1778042463.204626,
+    "ast_hash": "ffbc870bf119de2693a3aa2335a725a0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/email/EmailMessage.java": {
+    "mtime": 1778042409.505386,
+    "ast_hash": "ec40ffdceff62c68a161f67f33257908",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/auth/RegisterRequest.java": {
+    "mtime": 1776240893.3247366,
+    "ast_hash": "834c69a8541954a60cc90ca233e6e9e9",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/auth/UpdateProfileRequest.java": {
+    "mtime": 1776252518.1935265,
+    "ast_hash": "1cae0e567a8560c49d8e6c54b0906bfd",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/auth/ResetPasswordRequest.java": {
+    "mtime": 1776328688.6422772,
+    "ast_hash": "259a73f1b16f42ecc55c0cc42f52dbe4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/auth/AuthResponse.java": {
+    "mtime": 1776240893.3244169,
+    "ast_hash": "6fb4cb70babf9a263ad20430b48190d5",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/auth/ChangePasswordRequest.java": {
+    "mtime": 1776240893.3242784,
+    "ast_hash": "ae53a55a5a704e9b1a7a579576dd2ebd",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/auth/LoginRequest.java": {
+    "mtime": 1776240893.3245218,
+    "ast_hash": "b37c2b94b8a61ea00537f4b6fe547d60",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/java/com/example/superMalle/dto/auth/ForgotPasswordRequest.java": {
+    "mtime": 1776328565.283519,
+    "ast_hash": "45d7d8a7c55f82eb3013106a66870888",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/test/java/com/example/superMalle/CouponEntityTest.java": {
+    "mtime": 1778058046.6493154,
+    "ast_hash": "7a44867a5acba7ce3fb0acbca79b42b4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/test/java/com/example/superMalle/SuperMalleApplicationTests.java": {
+    "mtime": 1776240944.7900908,
+    "ast_hash": "78eae11fe49e88535f18412b6bd5c5c4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/test/java/com/example/superMalle/aspect/IdempotencyInterceptorTest.java": {
+    "mtime": 1776404831.6241267,
+    "ast_hash": "b6ee5d882eb99dd4c94e983d0b46f1d7",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/scripts/verify-backup.sh": {
+    "mtime": 1778044400.10361,
+    "ast_hash": "7bdb9ae7d822abc0e41a80179219ca8c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/scripts/restore-database.sh": {
+    "mtime": 1778044308.5256195,
+    "ast_hash": "f6bdc8b07db2728c0f228d5aba7c6061",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/scripts/backup-database.sh": {
+    "mtime": 1778044263.4640305,
+    "ast_hash": "c9f0458a16e7d23e669e7b196317c7db",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/docker-compose.yml": {
+    "mtime": 1778043698.4366634,
+    "ast_hash": "9c971a6f98733cefbddb42196641a76b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/ENDPOINT_TESTING_GUIDE.md": {
+    "mtime": 1778053174.45706,
+    "ast_hash": "b388c141a01bd2902a13ee6645ba9bce",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/IDE_ISSUE_RESOLVED.md": {
+    "mtime": 1778055489.7996235,
+    "ast_hash": "29a2b4840a14b7b34b12d498a1afedb5",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/IDE_FIX_GUIDE.md": {
+    "mtime": 1778057950.4411197,
+    "ast_hash": "cea3c367e0a2ba8ca4458d6ff930a517",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/HELP.md": {
+    "mtime": 1776237853.421711,
+    "ast_hash": "b4e35f8c775eaef1ca78f41144b81e97",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/PHASE3_COMPLETION_SUMMARY.md": {
+    "mtime": 1778043743.9482586,
+    "ast_hash": "8d88dec0adfc8cffd5bf5ee8e6162685",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/ENDPOINT_TESTING_RESULTS.md": {
+    "mtime": 1778034459.0401938,
+    "ast_hash": "f2bf6a707b4566f0f5224fdf9f411609",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/docker-compose.prod.yml": {
+    "mtime": 1778040691.7799735,
+    "ast_hash": "4d9bf555021fda36d98c81a26b20ab4c",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/IMPLEMENTATION_SUMMARY.md": {
+    "mtime": 1778039142.788475,
+    "ast_hash": "6e9e18752b460ad7c91e57a0a484cb3d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/PHASE1_COMPLETION_SUMMARY.md": {
+    "mtime": 1778042144.6445985,
+    "ast_hash": "41aedc9dbdafb7f8b8544ce4084d3144",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/PRODUCTION_READINESS_PLAN.md": {
+    "mtime": 1778041180.1075919,
+    "ast_hash": "96941cc6a280b55f3b8315d7d3f00b86",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/DISASTER_RECOVERY_PLAN.md": {
+    "mtime": 1778044370.2040064,
+    "ast_hash": "49f6b1fc453da8a42ace7dd91220ba66",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/IDE_FALSE_POSITIVES_FINAL_RESOLUTION.md": {
+    "mtime": 1778055151.6971428,
+    "ast_hash": "4fd82eb7aea3b2b818942df96aabe1b9",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/README.md": {
+    "mtime": 1778041657.4204443,
+    "ast_hash": "1c90dff9962ac8c5737dd92b6886070d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/QA-AUDIT-REPORT.md": {
+    "mtime": 1776288626.3946664,
+    "ast_hash": "fbd4d6a59273055beaa881291cb2f478",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/IDE_FALSE_POSITIVES_ANALYSIS.md": {
+    "mtime": 1778054603.436008,
+    "ast_hash": "0f8ed0ebf033d9c76fe4eca815f235a5",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/PHASE2_COMPLETION_SUMMARY.md": {
+    "mtime": 1778042895.7470067,
+    "ast_hash": "855b2711c9791e530f04f5027b86e66b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/QA_REPORT.md": {
+    "mtime": 1778052788.705217,
+    "ast_hash": "60154574a7212471c53fe7e6fd014c44",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/API_DOCUMENTATION_EXAMPLES.md": {
+    "mtime": 1778044232.5686858,
+    "ast_hash": "76fa22da2f4e656fa2f6e7da363a09b0",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/API_REFERENCE.md": {
+    "mtime": 1778039338.560481,
+    "ast_hash": "ce2608fa49a7504cfc2a628bd82e304b",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/ERROR_FIXES_COMPLETE_SUMMARY.md": {
+    "mtime": 1778049182.7537968,
+    "ast_hash": "fd0fd2e4ecea4109189a1cc958b95c80",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/ERROR_ANALYSIS.md": {
+    "mtime": 1778047319.5716777,
+    "ast_hash": "d0fa37e8655fc9127e97391bcce853c6",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/ERROR_FIXES_PROGRESS.md": {
+    "mtime": 1778047805.9769008,
+    "ast_hash": "753c06a48de9691eb7fb4ed7de488151",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/ERROR_FIXES_FINAL_SUMMARY.md": {
+    "mtime": 1778048241.0490289,
+    "ast_hash": "126dfcb7cb9717aa9978fad71a6ece25",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/PHASE4_COMPLETION_SUMMARY.md": {
+    "mtime": 1778044447.2167227,
+    "ast_hash": "2647178432f352589acf6e165d23359a",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/FINAL_STATUS_REPORT.md": {
+    "mtime": 1778039267.1631427,
+    "ast_hash": "6dc71d4040aea3813559425500275e8d",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/GAP_ANALYSIS_REPORT.md": {
+    "mtime": 1778034387.235609,
+    "ast_hash": "b7186f0b26a926b18a70b5c4dbda8765",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/PRODUCTION_READINESS_FINAL_REPORT.md": {
+    "mtime": 1778044476.044311,
+    "ast_hash": "6a91aa36eaec1db742ae18dc7d5561c1",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/IDE_FINAL_RESOLUTION.md": {
+    "mtime": 1778058249.9812727,
+    "ast_hash": "95565273e9c08aa306ef867b4ac6a410",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/SESSION_COMPLETION_SUMMARY.md": {
+    "mtime": 1778041325.2229986,
+    "ast_hash": "4aa599563b30b4ede3f0d11c803b8e56",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/GAP_ANALYSIS_SUMMARY.md": {
+    "mtime": 1778041271.0478985,
+    "ast_hash": "c212352a5964b7540d438026944e5ab5",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/.hermes/plans/2025-01-09_real-world-scenario-gap-analysis.md": {
+    "mtime": 1776401223.8434215,
+    "ast_hash": "558c92e304e28997d24be488dd8adde8",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/qa-tests/ADMIN_QA_REPORT.md": {
+    "mtime": 1776398582.0835547,
+    "ast_hash": "3a87b0563d2cd3b1995e924b3e0a40a6",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/docker/prometheus/prometheus.yml": {
+    "mtime": 1778043569.83551,
+    "ast_hash": "d3e13ff6d9eb7f5db1d9f22246f99bab",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/docker/prometheus/alert_rules.yml": {
+    "mtime": 1778043615.625364,
+    "ast_hash": "a6c02fd20757a9d9fd2684dfb71dade4",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/docker/grafana/dashboards/README.md": {
+    "mtime": 1778043498.0006552,
+    "ast_hash": "8b858bf9a549c2481afebef432c0d353",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/resources/application.yml": {
+    "mtime": 1778062351.1614444,
+    "ast_hash": "ce0590eaa13e71523c72c8905ae25c29",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/resources/templates/emails/order-confirmation.html": {
+    "mtime": 1778036388.0323575,
+    "ast_hash": "49e8a085014aab3270106345c510cf0f",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/src/main/resources/templates/emails/welcome.html": {
+    "mtime": 1778036428.1332848,
+    "ast_hash": "ae9c3a668517e17fb67d96986dd0f267",
+    "semantic_hash": ""
+  },
+  "/home/kai/Downloads/superMallFinal/backend/.github/workflows/ci-cd.yml": {
+    "mtime": 1778040770.8445408,
+    "ast_hash": "9612332d3ce1497e6ffe7a3097aaefc8",
+    "semantic_hash": ""
+  }
+}
