@@ -40,7 +40,7 @@ public class SecretValidationConfig {
             if (stripeSecretKey.contains("placeholder") || stripeSecretKey.startsWith("sk_tes...")) {
                 throw new IllegalStateException(
                     "SECURITY: Stripe secret key contains placeholder value. " +
-                    "Set the STRIPE_SECRET_KEY environment variable."
+                    "Set the STRIPE_API_KEY environment variable."
                 );
             }
             if (stripeWebhookSecret.contains("placeholder") || stripeWebhookSecret.startsWith("whsec_placeholder")) {
@@ -56,7 +56,7 @@ public class SecretValidationConfig {
                 log.warn("WARNING: Using default JWT secret. This is OK for development but MUST be changed in production.");
             }
             if (stripeSecretKey.startsWith("sk_tes...")) {
-                log.warn("WARNING: Using placeholder Stripe key. Payment features will not work until STRIPE_SECRET_KEY is set.");
+                log.warn("WARNING: Using placeholder Stripe key. Payment features will not work until STRIPE_API_KEY is set.");
             }
         }
     }

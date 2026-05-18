@@ -19,7 +19,7 @@ public class StripeConfig {
             Stripe.apiKey = stripeSecretKey;
             log.info("Stripe API key initialized (key prefix: {})", stripeSecretKey.substring(0, 7));
         } else {
-            log.warn("Stripe API key not configured or invalid. Payment features will not work. Set STRIPE_SECRET_KEY env var.");
+            log.warn("Stripe API key not configured or invalid. Payment features will not work. Set STRIPE_API_KEY env var.");
         }
     }
 }
