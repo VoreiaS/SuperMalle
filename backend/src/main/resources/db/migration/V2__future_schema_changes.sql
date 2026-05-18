@@ -1,0 +1,4 @@
+-- V2__future_schema_changes.sql
+-- Add new migrations here as the application evolves
+-- Example:
+-- ALTER TABLE users ADD COLUMN two_factor_enabled BOOLEAN DEFAULT FALSE;
