@@ -1,15 +1,58 @@
 # SuperMalle API Reference Guide
 
-**Base URL:** `http://localhost:8080`
-**Authentication:** JWT Bearer Token
+**Base URL:** `http://localhost:8080/api/v1`
+**Authentication:** JWT Bearer Token (`Authorization: Bearer <token>`)
 
 ---
 
-## Authentication
+## Contents
+
+- [Auth](#auth)
+- [Menu & Categories](#menu--categories)
+- [Cart](#cart)
+- [Orders](#orders)
+- [Order Modifications](#order-modifications)
+- [Payments](#payments)
+- [Coupons](#coupons)
+- [Reviews](#reviews)
+- [Loyalty](#loyalty)
+- [Inventory](#inventory)
+- [Admin Dashboard](#admin-dashboard)
+- [Admin Orders](#admin-orders)
+- [Admin Menu](#admin-menu)
+- [Admin Categories](#admin-categories)
+- [Admin Coupons](#admin-coupons)
+- [Admin Payments](#admin-payments)
+- [Admin Users](#admin-users)
+- [Admin Reviews](#admin-reviews)
+- [Admin Settings](#admin-settings)
+- [Admin Operating Hours](#admin-operating-hours)
+- [Admin Announcements](#admin-announcements)
+- [WebSocket Topics](#websocket-topics)
+- [Error Responses](#error-responses)
+- [Rate Limiting](#rate-limiting)
+- [Testing Credentials](#testing-credentials)
+
+---
+
+## Auth
+
+### Register
+```
+POST /auth/register
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "SecurePass123!",
+  "phone": "+1-555-123-4567"
+}
+```
 
 ### Login
-```http
-POST /api/v1/auth/login
+```
+POST /auth/login
 Content-Type: application/json
 
 {
@@ -17,161 +60,168 @@ Content-Type: application/json
   "password": "Admin@2026!"
 }
 ```
-
 **Response:**
 ```json
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "token": "eyJhbGciOiJIUzI1NiIs...",
   "type": "Bearer",
   "id": 2,
+  "name": "Admin",
   "email": "admin@supermalle.com",
   "role": "ADMIN"
 }
 ```
 
+### Refresh Token
+```
+POST /auth/refresh
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{ "refreshToken": "<refresh_token>" }
+```
+
+### Change Password
+```
+POST /auth/change-password
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "currentPassword": "oldPass123!",
+  "newPassword": "newPass456!"
+}
+```
+
+### Forgot Password
+```
+POST /auth/forgot-password
+Content-Type: application/json
+
+{ "email": "user@example.com" }
+```
+
+### Reset Password
+```
+POST /auth/reset-password
+Content-Type: application/json
+
+{
+  "token": "<reset_token>",
+  "newPassword": "newPass456!"
+}
+```
+
 ---
 
-## Inventory Management
+## Menu & Categories
 
-### Get All Inventory
-```http
-GET /api/v1/inventory
+### Get Active Categories
+```
+GET /categories
+```
+
+### Get Menu (grouped by category)
+```
+GET /menu
+```
+
+### Get Single Menu Item
+```
+GET /menu/{id}
+```
+
+### Search Menu Items
+```
+GET /menu/search?q=pizza&categoryId=1&page=0&size=10
+```
+
+### Get Items by Category
+```
+GET /menu/category/{categoryId}?page=0&size=10
+```
+
+---
+
+## Cart
+
+### Get Cart
+```
+GET /cart
 Authorization: Bearer <token>
 ```
 
-### Get Single Inventory Item
-```http
-GET /api/v1/inventory/{id}
-Authorization: Bearer <token>
+### Add to Cart
 ```
-
-### Update Inventory
-```http
-PUT /api/v1/inventory/{id}
+POST /cart/add
 Authorization: Bearer <token>
 Content-Type: application/json
 
 {
   "menuItemId": 1,
-  "quantity": 150,
-  "reorderLevel": 30,
-  "maxQuantity": 300,
-  "unit": "pieces",
-  "costPerUnit": 6.0,
-  "supplierName": "Updated Supplier",
-  "supplierContact": "updated@example.com"
+  "quantity": 2,
+  "specialInstructions": "No onions",
+  "selectedOptions": [
+    { "optionGroupId": 1, "optionId": 3 }
+  ]
 }
 ```
 
-### Restock Inventory
-```http
-POST /api/v1/inventory/{id}/restock
+### Update Cart Item
+```
+PUT /cart/update/{cartItemId}
 Authorization: Bearer <token>
 Content-Type: application/json
 
-{
-  "quantityToAdd": 50,
-  "supplierName": "Restock Supplier",
-  "supplierContact": "restock@example.com"
-}
+{ "quantity": 3 }
 ```
 
-### Get Low Stock Items
-```http
-GET /api/v1/inventory/low-stock
+### Remove from Cart
+```
+DELETE /cart/remove/{cartItemId}
+Authorization: Bearer <token>
+```
+
+### Clear Cart
+```
+DELETE /cart/clear
 Authorization: Bearer <token>
 ```
 
 ---
 
-## Loyalty Program
+## Orders
 
-### Get Active Program (Public)
-```http
-GET /api/v1/loyalty/program
+### Place Order
 ```
-
-**Response:**
-```json
-{
-  "id": 1,
-  "name": "SuperMalle Rewards",
-  "description": "Earn points with every order and redeem for discounts!",
-  "pointsPerDollar": 10,
-  "redemptionRate": 100,
-  "minPointsToRedeem": 500,
-  "maxPointsPerOrder": 1000,
-  "welcomeBonusPoints": 100,
-  "referralBonusPoints": 500,
-  "isActive": true
-}
-```
-
-### Get Leaderboard (Public)
-```http
-GET /api/v1/loyalty/leaderboard?limit=10
-```
-
-### Get My Loyalty Info
-```http
-GET /api/v1/loyalty/me
-Authorization: Bearer <token>
-```
-
-**Response:**
-```json
-{
-  "id": 1,
-  "userId": 2,
-  "userName": "Admin",
-  "userEmail": "admin@supermalle.com",
-  "loyaltyProgramId": 1,
-  "loyaltyProgramName": "SuperMalle Rewards",
-  "totalPoints": 100,
-  "availablePoints": 100,
-  "redeemedPoints": 0,
-  "tierLevel": "BRONZE",
-  "lifetimePoints": 100,
-  "totalOrders": 0,
-  "totalSpent": 0.0,
-  "referralCode": "88811490",
-  "referralCount": 0,
-  "isActive": true,
-  "tierMultiplier": 1.0,
-  "tierBenefits": "Standard benefits",
-  "pointsToNextTier": 900,
-  "nextTier": "SILVER",
-  "discountValue": 0.0
-}
-```
-
-### Redeem Points
-```http
-POST /api/v1/loyalty/me/redeem
+POST /orders
 Authorization: Bearer <token>
 Content-Type: application/json
 
 {
-  "pointsToRedeem": 500,
-  "orderId": 1
+  "orderType": "DELIVERY",
+  "deliveryAddress": "123 Main St, City",
+  "specialInstructions": "Ring doorbell",
+  "paymentMethodId": "pm_123",
+  "couponCode": "SAVE10"
 }
 ```
 
-### Get Transaction History
-```http
-GET /api/v1/loyalty/me/transactions
+### Get My Orders
+```
+GET /orders?page=0&size=10
 Authorization: Bearer <token>
 ```
 
-### Enroll in Loyalty Program
-```http
-POST /api/v1/loyalty/enroll
+### Get Order Detail
+```
+GET /orders/{id}
 Authorization: Bearer <token>
 ```
 
-### Apply Referral Code
-```http
-POST /api/v1/loyalty/apply-referral?referralCode=88811490
+### Cancel Order
+```
+POST /orders/{id}/cancel
 Authorization: Bearer <token>
 ```
 
@@ -180,8 +230,8 @@ Authorization: Bearer <token>
 ## Order Modifications
 
 ### Request Modification
-```http
-POST /api/v1/order-modifications
+```
+POST /order-modifications
 Authorization: Bearer <token>
 Content-Type: application/json
 
@@ -193,34 +243,29 @@ Content-Type: application/json
 }
 ```
 
-**Modification Types:**
-- `ADD_ITEM` - Add items to order
-- `REMOVE_ITEM` - Remove items from order
-- `UPDATE_QUANTITY` - Update item quantities
-- `UPDATE_ADDRESS` - Update delivery address
-- `CANCEL_ITEM` - Cancel specific items
+**Types:** `ADD_ITEM`, `REMOVE_ITEM`, `UPDATE_QUANTITY`, `UPDATE_ADDRESS`, `CANCEL_ITEM`
 
 ### Get My Modifications
-```http
-GET /api/v1/order-modifications/my
+```
+GET /order-modifications/my
 Authorization: Bearer <token>
 ```
 
 ### Get Order Modifications
-```http
-GET /api/v1/order-modifications/order/{orderId}
+```
+GET /order-modifications/order/{orderId}
 Authorization: Bearer <token>
 ```
 
 ### Get Pending Modifications (Admin)
-```http
-GET /api/v1/order-modifications/pending
+```
+GET /order-modifications/pending
 Authorization: Bearer <token>
 ```
 
 ### Approve Modification (Admin)
-```http
-POST /api/v1/order-modifications/approve
+```
+POST /order-modifications/approve
 Authorization: Bearer <token>
 Content-Type: application/json
 
@@ -231,8 +276,8 @@ Content-Type: application/json
 ```
 
 ### Reject Modification (Admin)
-```http
-POST /api/v1/order-modifications/reject
+```
+POST /order-modifications/reject
 Authorization: Bearer <token>
 Content-Type: application/json
 
@@ -243,30 +288,166 @@ Content-Type: application/json
 ```
 
 ### Get Pending Count (Admin)
-```http
-GET /api/v1/order-modifications/stats/pending-count
+```
+GET /order-modifications/stats/pending-count
 Authorization: Bearer <token>
 ```
 
 ---
 
-## Admin Endpoints
+## Payments
 
-### Get All Loyalty Programs
-```http
-GET /api/v1/loyalty/programs
+### Create Payment Intent
+```
+POST /payments/create-intent
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "orderId": 1,
+  "currency": "usd"
+}
+```
+
+### Confirm Payment
+```
+POST /payments/confirm
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "paymentIntentId": "pi_123",
+  "paymentMethodId": "pm_123"
+}
+```
+
+### Stripe Webhook
+```
+POST /payments/webhook
+Content-Type: application/json
+Stripe-Signature: <webhook_signature>
+```
+
+### Get Payment by ID
+```
+GET /payments/{id}
 Authorization: Bearer <token>
 ```
 
-### Create Loyalty Program
-```http
-POST /api/v1/loyalty/programs
+### Request Refund
+```
+POST /payments/{id}/refund
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "amount": 25.00,
+  "reason": "Customer requested refund"
+}
+```
+
+---
+
+## Coupons
+
+### Validate Coupon
+```
+POST /coupons/validate
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "code": "SAVE10",
+  "orderAmount": 50.00
+}
+```
+
+---
+
+## Reviews
+
+### Get Item Reviews
+```
+GET /reviews/item/{menuItemId}
+```
+
+### Submit Review
+```
+POST /reviews
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "menuItemId": 1,
+  "rating": 5,
+  "comment": "Amazing food!"
+}
+```
+
+---
+
+## Loyalty
+
+### Get Active Program (Public)
+```
+GET /loyalty/program
+```
+
+### Get Leaderboard (Public)
+```
+GET /loyalty/leaderboard?limit=10
+```
+
+### Get My Loyalty Info
+```
+GET /loyalty/me
+Authorization: Bearer <token>
+```
+
+### Get Transaction History
+```
+GET /loyalty/me/transactions
+Authorization: Bearer <token>
+```
+
+### Redeem Points
+```
+POST /loyalty/me/redeem
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "pointsToRedeem": 500,
+  "orderId": 1
+}
+```
+
+### Enroll in Loyalty Program
+```
+POST /loyalty/enroll
+Authorization: Bearer <token>
+```
+
+### Apply Referral Code
+```
+POST /loyalty/apply-referral?referralCode=88811490
+Authorization: Bearer <token>
+```
+
+### Get All Programs (Admin)
+```
+GET /loyalty/programs
+Authorization: Bearer <token>
+```
+
+### Create Program (Admin)
+```
+POST /loyalty/programs
 Authorization: Bearer <token>
 Content-Type: application/json
 
 {
   "name": "SuperMalle Rewards",
-  "description": "Earn points with every order!",
   "pointsPerDollar": 10,
   "redemptionRate": 100,
   "minPointsToRedeem": 500,
@@ -276,90 +457,406 @@ Content-Type: application/json
 }
 ```
 
-### Update Loyalty Program
-```http
-PUT /api/v1/loyalty/programs/{id}
+### Update Program (Admin)
+```
+PUT /loyalty/programs/{id}
 Authorization: Bearer <token>
-Content-Type: application/json
-
-{
-  "name": "Updated Program Name",
-  "pointsPerDollar": 15
-}
 ```
 
-### Delete Loyalty Program
-```http
-DELETE /api/v1/loyalty/programs/{id}
+### Delete Program (Admin)
+```
+DELETE /loyalty/programs/{id}
 Authorization: Bearer <token>
 ```
 
 ### Get User Loyalty (Admin)
-```http
-GET /api/v1/loyalty/users/{userId}
+```
+GET /loyalty/users/{userId}
 Authorization: Bearer <token>
 ```
 
-### Get User Transaction History (Admin)
-```http
-GET /api/v1/loyalty/users/{userId}/transactions
-Authorization: Bearer <token>
+### Enroll User (Admin)
 ```
-
-### Enroll User in Loyalty (Admin)
-```http
-POST /api/v1/loyalty/users/{userId}/enroll
+POST /loyalty/users/{userId}/enroll
 Authorization: Bearer <token>
 ```
 
 ### Award Points for Order (Admin)
-```http
-POST /api/v1/loyalty/orders/{orderId}/award-points
+```
+POST /loyalty/orders/{orderId}/award-points
+Authorization: Bearer <token>
+```
+
+### Get User Transactions (Admin)
+```
+GET /loyalty/users/{userId}/transactions
 Authorization: Bearer <token>
 ```
 
 ---
 
-## Error Responses
+## Inventory
 
-### 400 Bad Request
-```json
+### Get All Inventory
+```
+GET /inventory
+Authorization: Bearer <token>
+```
+
+### Get Single Item
+```
+GET /inventory/{id}
+Authorization: Bearer <token>
+```
+
+### Update Inventory
+```
+PUT /inventory/{id}
+Authorization: Bearer <token>
+Content-Type: application/json
+
 {
-  "timestamp": "2026-05-05T20:41:24.470059106",
-  "status": 400,
-  "error": "Bad Request",
-  "message": "Inventory already exists for this menu item",
-  "path": "/api/v1/inventory"
+  "menuItemId": 1,
+  "quantity": 150,
+  "reorderLevel": 30,
+  "unit": "pieces",
+  "costPerUnit": 6.0,
+  "supplierName": "Supplier Co",
+  "supplierContact": "supplier@example.com"
 }
 ```
 
-### 401 Unauthorized
-```json
+### Restock
+```
+POST /inventory/{id}/restock
+Authorization: Bearer <token>
+Content-Type: application/json
+
 {
-  "timestamp": "2026-05-05T20:41:24.470059106",
-  "status": 401,
-  "error": "Unauthorized",
-  "message": "Invalid token"
+  "quantityToAdd": 50,
+  "supplierName": "Restock Supplier"
 }
 ```
 
-### 403 Forbidden
-```json
+### Get Low Stock Items
+```
+GET /inventory/low-stock
+Authorization: Bearer <token>
+```
+
+---
+
+## Admin Dashboard
+
+```
+GET /admin/dashboard
+Authorization: Bearer <token>
+```
+Returns: total revenue, order count, customer count, sales chart data, top items, recent orders.
+
+---
+
+## Admin Orders
+
+### List All Orders
+```
+GET /admin/orders?page=0&size=20&status=PENDING&from=2026-01-01&to=2026-12-31
+Authorization: Bearer <token>
+```
+
+### Update Order Status
+```
+PUT /admin/orders/{id}/status
+Authorization: Bearer <token>
+Content-Type: application/json
+
 {
-  "timestamp": "2026-05-05T20:41:24.470059106",
-  "status": 403,
-  "error": "Forbidden",
-  "message": "Access denied"
+  "status": "PREPARING"
 }
 ```
 
-### 404 Not Found
-```json
+### Update ETA
+```
+PUT /admin/orders/{id}/eta
+Authorization: Bearer <token>
+Content-Type: application/json
+
 {
-  "timestamp": "2026-05-05T20:41:24.470059106",
-  "status": 404,
-  "error": "Not Found",
-  "message": "Order not found with id: 1"
+  "etaMinutes": 25
+}
+```
+
+---
+
+## Admin Menu
+
+### List All Items
+```
+GET /admin/menu?page=0&size=20&categoryId=1&search=pizza
+Authorization: Bearer <token>
+```
+
+### Create Item
+```
+POST /admin/menu
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "name": "Margherita Pizza",
+  "description": "Classic tomato and mozzarella",
+  "price": 12.99,
+  "categoryId": 1,
+  "isAvailable": true,
+  "preparationTimeMinutes": 15,
+  "dietaryTags": ["VEGETARIAN"],
+  "allergens": ["GLUTEN", "DAIRY"],
+  "imageUrl": "https://example.com/pizza.jpg",
+  "optionGroups": [
+    {
+      "name": "Size",
+      "isRequired": true,
+      "maxSelections": 1,
+      "options": [
+        { "name": "Small", "priceAdjustment": 0 },
+        { "name": "Large", "priceAdjustment": 4.00 }
+      ]
+    }
+  ]
+}
+```
+
+### Update Item
+```
+PUT /admin/menu/{id}
+Authorization: Bearer <token>
+```
+
+### Delete Item
+```
+DELETE /admin/menu/{id}
+Authorization: Bearer <token>
+```
+
+---
+
+## Admin Categories
+
+### List All Categories
+```
+GET /admin/categories
+Authorization: Bearer <token>
+```
+
+### Create Category
+```
+POST /admin/categories
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "name": "Beverages",
+  "imageUrl": "https://example.com/drinks.jpg",
+  "sortOrder": 4
+}
+```
+
+### Update Category
+```
+PUT /admin/categories/{id}
+Authorization: Bearer <token>
+```
+
+### Delete Category (soft)
+```
+DELETE /admin/categories/{id}
+Authorization: Bearer <token>
+```
+
+---
+
+## Admin Coupons
+
+### List All Coupons
+```
+GET /admin/coupons
+Authorization: Bearer <token>
+```
+
+### Create Coupon
+```
+POST /admin/coupons
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "code": "SUMMER20",
+  "type": "PERCENTAGE",
+  "value": 20.0,
+  "maxUsageCount": 100,
+  "maxUsagePerUser": 1,
+  "minOrderAmount": 30.0,
+  "maxDiscountAmount": 50.0,
+  "startDate": "2026-06-01T00:00:00",
+  "endDate": "2026-08-31T23:59:59",
+  "isActive": true
+}
+```
+
+### Update Coupon
+```
+PUT /admin/coupons/{id}
+Authorization: Bearer <token>
+```
+
+### Delete Coupon
+```
+DELETE /admin/coupons/{id}
+Authorization: Bearer <token>
+```
+
+---
+
+## Admin Payments
+
+### List All Payments
+```
+GET /admin/payments?page=0&size=20&status=COMPLETED&from=2026-01-01&to=2026-12-31
+Authorization: Bearer <token>
+```
+
+### Process Refund
+```
+POST /admin/payments/{id}/refund
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "amount": 25.00,
+  "reason": "Item out of stock"
+}
+```
+
+---
+
+## Admin Users
+
+### List All Users
+```
+GET /admin/users?page=0&size=20&role=CUSTOMER&search=john
+Authorization: Bearer <token>
+```
+
+### Create User
+```
+POST /admin/users
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "name": "New Staff",
+  "email": "staff@supermalle.com",
+  "role": "STAFF",
+  "phone": "+1-555-999-9999"
+}
+```
+Response includes generated password and sends welcome email.
+
+### Update User
+```
+PUT /admin/users/{id}
+Authorization: Bearer <token>
+```
+
+### Reset Password
+```
+POST /admin/users/{id}/reset-password
+Authorization: Bearer <token>
+```
+
+---
+
+## Admin Reviews
+
+### List All Reviews
+```
+GET /admin/reviews?status=PENDING
+Authorization: Bearer <token>
+```
+
+### Approve Review
+```
+PUT /admin/reviews/{id}/approve
+Authorization: Bearer <token>
+```
+
+### Reject Review
+```
+PUT /admin/reviews/{id}/reject
+Authorization: Bearer <token>
+```
+
+---
+
+## Admin Settings
+
+### Get Settings
+```
+GET /admin/settings
+Authorization: Bearer <token>
+```
+
+### Update Settings
+```
+PUT /admin/settings
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "restaurantName": "SuperMalle Restaurant",
+  "taxRate": 0.08,
+  "deliveryCharge": 5.00,
+  "phone": "+1-555-123-4567",
+  "address": "123 Main St, City, State 12345"
+}
+```
+
+---
+
+## Admin Operating Hours
+
+### Get Hours
+```
+GET /admin/hours
+Authorization: Bearer <token>
+```
+
+### Update Hours
+```
+PUT /admin/hours
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "hours": [
+    { "dayOfWeek": "MONDAY", "openTime": "09:00", "closeTime": "22:00", "isClosed": false }
+  ]
+}
+```
+
+---
+
+## Admin Announcements
+
+### Send Announcement
+```
+POST /admin/announce
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "title": "New Menu Items!",
+  "message": "Check out our new summer specials!"
 }
 ```
 
@@ -367,121 +864,83 @@ Authorization: Bearer <token>
 
 ## WebSocket Topics
 
-### Inventory Updates
-```
-/topic/admin/inventory
-/topic/admin/inventory/alerts
+Connect to `ws://localhost:8080/ws` via STOMP.
+
+| Topic | Description |
+|-------|-------------|
+| `/topic/orders` | Order status updates |
+| `/topic/orders/{orderNumber}` | Specific order updates |
+| `/topic/admin/orders` | Admin order notifications |
+| `/topic/admin/inventory` | Inventory changes |
+| `/topic/admin/inventory/alerts` | Low stock alerts |
+| `/topic/admin/order-modifications` | Modification requests |
+| `/topic/user/{userId}/loyalty` | User loyalty updates |
+
+---
+
+## Error Responses
+
+### 400 Bad Request
+```json
+{ "status": 400, "error": "Bad Request", "message": "Validation failed" }
 ```
 
-### Order Modifications
-```
-/topic/admin/order-modifications
-/topic/orders/{orderNumber}/modifications
+### 401 Unauthorized
+```json
+{ "status": 401, "error": "Unauthorized", "message": "Invalid token" }
 ```
 
-### Loyalty Updates
+### 403 Forbidden
+```json
+{ "status": 403, "error": "Forbidden", "message": "Access denied" }
 ```
-/topic/user/{userId}/loyalty
+
+### 404 Not Found
+```json
+{ "status": 404, "error": "Not Found", "message": "Order not found with id: 1" }
+```
+
+### 429 Too Many Requests
+```json
+{ "status": 429, "error": "Too Many Requests", "message": "Rate limit exceeded" }
+```
+
+### 500 Internal Server Error
+```json
+{ "status": 500, "error": "Internal Server Error", "message": "An unexpected error occurred" }
 ```
 
 ---
 
-## Tier System
+## Loyalty Tier System
 
 | Tier | Points Range | Multiplier | Benefits |
 |------|-------------|------------|----------|
-| Bronze | 0-999 | 1.0x | Standard benefits |
-| Silver | 1,000-4,999 | 1.1x | 10% bonus points |
-| Gold | 5,000-9,999 | 1.25x | 25% bonus points |
+| Bronze | 0–999 | 1.0x | Standard benefits |
+| Silver | 1,000–4,999 | 1.1x | 10% bonus points |
+| Gold | 5,000–9,999 | 1.25x | 25% bonus points |
 | Platinum | 10,000+ | 1.5x | 50% bonus points |
 
----
-
-## Points System
-
-- **Earning:** 10 points per $1 spent
-- **Redemption:** 100 points = $1 discount
-- **Welcome Bonus:** 100 points on enrollment
-- **Referral Bonus:** 500 points for both referrer and referee
-- **Minimum Redemption:** 500 points ($5 discount)
-- **Maximum Per Order:** 1000 points ($10 discount)
-
----
-
-## Testing Credentials
-
-### Admin User
-- Email: admin@supermalle.com
-- Password: Admin@2026!
-- Role: ADMIN
-
-### Test Customer
-- Email: test@example.com
-- Password: test123
-- Role: CUSTOMER
-
----
-
-## Common Use Cases
-
-### 1. Customer Places Order and Earns Points
-1. Customer places order through existing order API
-2. Admin calls `POST /api/v1/loyalty/orders/{orderId}/award-points`
-3. Customer receives points automatically
-4. Customer can check points via `GET /api/v1/loyalty/me`
-
-### 2. Customer Requests Order Modification
-1. Customer calls `POST /api/v1/order-modifications`
-2. Admin sees request via `GET /api/v1/order-modifications/pending`
-3. Admin approves or rejects via respective endpoints
-4. Customer receives notification via WebSocket
-
-### 3. Customer Redeems Points
-1. Customer checks available points via `GET /api/v1/loyalty/me`
-2. Customer calls `POST /api/v1/loyalty/me/redeem`
-3. Points are deducted and discount applied
-4. Transaction recorded in history
-
-### 4. Admin Monitors Inventory
-1. Admin calls `GET /api/v1/inventory/low-stock`
-2. Admin sees items needing restock
-3. Admin calls `POST /api/v1/inventory/{id}/restock`
-4. Inventory updated and notification sent
+**Points:** 10 per $1 spent. Redemption: 100 points = $1. Welcome bonus: 100. Referral bonus: 500.
 
 ---
 
 ## Rate Limiting
 
-Currently not implemented. Consider adding for production:
-- 100 requests per minute per user
-- 1000 requests per minute per IP
+| Role | Limit |
+|------|-------|
+| Default | 100 requests/minute |
+| Admin | 1000 requests/minute |
+| Staff | 500 requests/minute |
+| Customer | 100 requests/minute |
+
+Disabled in `dev` profile.
 
 ---
 
-## CORS Configuration
+## Testing Credentials
 
-Allowed origins (configurable in application.yml):
-- http://localhost:3000 (default for React dev)
-- https://yourdomain.com (production)
-
----
-
-## Notes
-
-- All datetime fields are in ISO 8601 format
-- All monetary values are in USD
-- All IDs are Long integers
-- JWT tokens expire in 24 hours (configurable)
-- WebSocket connections require authentication
-
----
-
-## Support
-
-For issues or questions:
-1. Check FINAL_STATUS_REPORT.md for system status
-2. Review IMPLEMENTATION_SUMMARY.md for detailed documentation
-3. Verify JWT token is valid and not expired
-4. Ensure user has correct role for requested endpoint
-
-**Status:** ✅ API READY FOR INTEGRATION
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | admin@supermalle.com | Admin@2026! |
+| Customer | test@example.com | test123 |
