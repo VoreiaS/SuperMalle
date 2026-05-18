@@ -1,0 +1,71 @@
+# --- Environment & Secrets ---
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/UiSuperMalle/.env
+frontend/UiSuperMalle/.env.production
+backend/src/main/resources/application-local.yml
+backend/src/main/resources/application-secret*.yml
+
+# --- Backend (Java / Maven / Spring Boot) ---
+backend/target/
+backend/*.jar
+backend/*.war
+backend/logs/
+backend/build/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.springBeans
+backend/!.mvn/wrapper/maven-wrapper.jar
+
+# --- Frontend (Node / Vite / React) ---
+frontend/UiSuperMalle/node_modules/
+frontend/UiSuperMalle/dist/
+frontend/UiSuperMalle/build/
+frontend/UiSuperMalle/.vite/
+frontend/*/node_modules/
+frontend/*/dist/
+frontend/*/build/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Uploads ---
+uploads/
+
+# --- IDE ---
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+/out/
+/nbproject/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.pem
+
+# --- Maven wrapper ---
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# --- Graphify cache ---
+**/graphify-out/cache/
+
+# --- IDE plans / notes ---
+.hermes/
+**/.hermes/
+
+# --- Temp ---
+*.tmp
+*.temp
