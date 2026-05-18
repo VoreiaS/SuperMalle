@@ -1,0 +1,84 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 10MB
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: false
+    open-in-view: false
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      timeout: 1000
+      lettuce:
+        pool:
+          max-active: 2
+          max-idle: 2
+          min-idle: 0
+          max-wait: 100ms
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:admin}
+    password: ${RABBITMQ_PASSWORD:admin}
+  mail:
+    host: ${EMAIL_HOST:localhost}
+    port: ${EMAIL_PORT:1025}
+    username: ${EMAIL_USERNAME:test}
+    password: ${EMAIL_PASSWORD:test}
+    protocol: smtp
+    tls: false
+    auth: false
+    from: test@supermalle.com
+    from-name: SuperMalle Test
+
+server:
+  port: 0
+
+stripe:
+  api:
+    key: sk_test_mock_key
+    webhook-secret: whsec_mock_secret
+
+app:
+  upload:
+    dir: ${java.io.tmpdir}/supermalle-test-uploads
+  restaurant:
+    tax-rate: 0.08
+    tax-rates: {STANDARD: 0.08, ALCOHOL: 0.10, PREPARED_FOOD: 0.08, GROCERY: 0.0}
+    delivery-charge: 5.00
+    name: SuperMalle Test
+    phone: +1-555-000-0000
+    address: 123 Test St
+
+rate:
+  limit:
+    enabled: false
+
+encryption:
+  key:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.example.superMalle: WARN
+    org.springframework: WARN
